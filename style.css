@@ -192,17 +192,29 @@ p{
     left: 400px;
     animation: block 4s infinite linear;
 }
-@media (max-width:1500px){
+@media (max-width:700px){
     #head{
-        font-size: 30px;
-        width: 500px;
+        font-size: 40px;
+        width: 700px;
     }
     #bdy{
-        background-image: url(/Flappy-Bird/Android\ Large\ -\ 1.png);
-        /* background-size: contain */
-    }
+        background-image: url(/Flappy-Bird/Android\ Large\ -\ 1.png);    }
     .feat{
+        margin-left: -10px;
+    }
+    .logo{
+        width: 500px;
+        margin-left: 500px;
+        margin-top: -70px;
+        border: 2px solid black;
 
+    }
+    .instruction{
+        margin-left: 570px;
+        margin-top: 35%;
+        height: 100px;
+        width: 300px;
+        border-radius: 50px;
     }
 }
 

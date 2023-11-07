@@ -192,17 +192,17 @@ p{
     left: 400px;
     animation: block 4s infinite linear;
 }
-@media (max-width:430px){
+@media (max-width:700px){
     #head{
         font-size: 30px;
         width: 500px;
     }
     #bdy{
-        background-image: url(Android\ Large\ -\ 1.png);
-        background-size: contain
+        background-image: url(/Flappy-Bird/Android\ Large\ -\ 1.png);
+        /* background-size: contain */
     }
     .feat{
-        
+
     }
 }
 

@@ -157,7 +157,7 @@ p{
     justify-content: space-between;
 }
 .body3{
-    background-image: url(/Flappy-Bird/desktop-wallpaper-flappy-bird-backgrounds-flappy-bird\ -\ Copy.jpg);
+    background-image: url(/Flappy-Bird/desktop-wallpaper-flappy-bird-backgrounds-flappy-bird\ -\ Copy.jpg)
 }
 .gameover{
     background-image: url(game\ page.jpeg);
@@ -196,6 +196,13 @@ p{
     #head{
         font-size: 30px;
         width: 500px;
+    }
+    #bdy{
+        background-image: url(Android\ Large\ -\ 1.png);
+        background-size: contain
+    }
+    .feat{
+        
     }
 }
 

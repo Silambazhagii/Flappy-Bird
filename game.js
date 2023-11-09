@@ -5,12 +5,18 @@ var body = document.querySelector(".body3");
 var timer = document.getElementById("time");
 var score = document.getElementById("scr");
 const main = document.querySelector("#game");
+var name = document.getElementById("name")
+var nicky = document.getElementById("nick-name")
 
+var score = parseInt(sessionStorage.getItem("scr")) || 0;
 
-let birdLeft = 100;
+// if (name.value=="" && nicky=="){
+
+// }
+let birdLeft = 300;
 let birdBottom = 370;
 let isGameOver = false;
-gap = 450;
+gap = 470;
 
 const gravity = 1;
 let jumping = 0;
@@ -21,22 +27,22 @@ function start() {
         bird.style.bottom = birdBottom + 'px';
         bird.style.left = birdLeft + 'px';
     }
-    // if (birdBottom>550){
-    //     window.location.href = "gameover.html"
-    // }
-    // else if(birdBottom<10){
-    //     window.location.href = "gameover.html"
-    // }
+    if (birdBottom>550){
+        window.location.href = "gameover.html"
+    }
+    else if(birdBottom<10){
+        window.location.href = "gameover.html"
+    }
 }
 let gameTimerId = setInterval(start, 10);
 
-// let flap = new Audio("flap.mp3")
+let flap = new Audio("flap.mp3")
 
-// body.onclick=()=>{
-//     flap.pause()
-//     flap.currentTime=0;
-//     flap.play()
-// }
+body.onclick=()=>{
+    flap.pause()
+    flap.currentTime=0;
+    flap.play()
+}
 // const bgm = new Audio("Flappy Bird Theme Song.mp3")
 // bgm.play()
 // bgm.loop = true;
@@ -67,6 +73,7 @@ const timeinterval = setInterval(() => {
     if (countdown % 5 == 0) {
         scr++
         score.innerText = scr
+        sessionStorage.setItem(("scr", score))
     }
     timer.innerText = countdown;
 }, 1000);
@@ -112,3 +119,4 @@ function gameOver() {
     isGameOver = true
     document.removeEventListener('click', jump)
 }
+

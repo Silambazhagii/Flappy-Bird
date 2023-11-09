@@ -10,7 +10,7 @@ const main = document.querySelector("#game");
 let birdLeft = 100;
 let birdBottom = 370;
 let isGameOver = false;
-gap = 400;
+gap = 450;
 
 const gravity = 1;
 let jumping = 0;
@@ -89,9 +89,12 @@ function generateTower() {
     function moveTower() {
         towerLeft -= 3
         tower.style.left = towerLeft + 'px'
+        topTower.style.left = towerLeft + 'px'
         if (towerLeft === -50) {
             clearInterval(timerId)
             main.removeChild(tower)
+            main.removeChild(topTower)
+            
         }
         if (tower > 200 && towerLeft < 280 && birdLeft === 220 && birdBottom === 0) {
             gameOver()

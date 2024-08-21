@@ -51,7 +51,7 @@
     font-size: 35px;
 }
 body{
-    background-image: url(/Instruction\ page.png);
+    background-image: url("./Instruction\ page.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed    ;

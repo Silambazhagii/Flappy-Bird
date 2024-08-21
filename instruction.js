@@ -4,11 +4,6 @@ var intro_body = document.querySelector(".body1")
 var fullname = document.querySelector("#name")
 var nick = document.querySelector("#nick-name")
 
-// Adding an event listener for the play button to navigate to the game page
-play_btn.addEventListener('click', () => {
-    window.location.href = "game.html"
-})
-
 // Setting up and playing background music for the game 
 const bgm = new Audio("MainTheme-320bit(chosic.com).mp3")
 bgm.play()
